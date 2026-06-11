@@ -1,5 +1,5 @@
 - name: configure frontend server
-  hosts: ansible-server
+  hosts: ansible_server
   become: yes
   tasks:
   - name: ping
