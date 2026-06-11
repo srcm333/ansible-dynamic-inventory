@@ -6,3 +6,8 @@ region:
 hostnames:
 # This options allows displaying the public ip address.
 - private-ip-address
+
+filters:
+  # This selects only running instances with tag `Environment` tag set to `dev`.
+  tag:Name: frontend
+  instance-state-name : running
